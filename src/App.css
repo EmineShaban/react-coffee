@@ -1,4 +1,79 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+img {
+  width: 100%;
+}
+
+.body {
+  font-family: "DM Sans", sans-serif;
+
+  background-color: black !important;
+}
+
+.container {
   background-color: #1B1D1F;
-color: white;
+  color: white;
+  width: 75%;
+  margin: auto;
+  margin-top: -55px;
+  z-index: 10;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.container .title {
+  font-size: 16px;
+  color: #6F757C;
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 15px;
+}
+
+.vector {
+  width: 250px;
+  /* position: absolute;
+  left: 700px;
+  top: 20px; */
+  position: absolute;
+  top: 10%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+}
+
+.title-div {
+  position: relative;
+  z-index: 5;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  column-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.isActiv {
+  background-color: #6F757C;
+  padding: 8px 12px;
+  border-radius: 10px;
+
+}
+
+button {
+  color: white;
+  background-color: #1B1D1F;
+  border: none;
+
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-.card{
+.card {
     font-family: "DM Sans", sans-serif;
 
     display: grid;
@@ -10,18 +10,21 @@
     column-gap: 50px;
     background-color: #1B1D1F;
 }
-img{
+
+img {
     width: 100%;
 }
 
-.card img{
+.card img {
     border-radius: 15px;
 }
-.card-item{
+
+.card-item {
     position: relative;
     margin-bottom: 40px;
 }
-.label{
+
+.label {
     background-color: #F6C768;
     width: max-content;
     padding: 5px 10px;
@@ -36,17 +39,18 @@ img{
     color: black;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.name{
+.name {
     font-weight: 700;
     font-size: 16px;
 }
-.price{
+
+.price {
     font-size: 12px;
     background-color: #BEE3CC;
     color: black;
@@ -57,11 +61,11 @@ img{
     margin: auto 0;
 }
 
-.ratings img{
+.ratings img {
     width: 30px;
 }
 
-.ratings{
+.ratings {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,21 +73,21 @@ img{
     margin-top: -20px;
 }
 
-.ratings div{
+.ratings div {
     display: flex;
     flex-direction: row;
     column-gap: 5px;
 }
 
-.sold-out{
+.sold-out {
     color: #ED735D;
 }
 
-.votes{
+.votes {
     color: #6F757C;
 }
 
-.no-ratings{
+.no-ratings {
     color: #6F757C;
 
 }

@@ -6,6 +6,7 @@ import Button from './components/Card';
 
 function App() {
   const [activeButton, setActiveButton] = useState("all"); // 'all' or 'available'
+  // const [showAvailable, setShowAvailable] = useState(false);
 
   return (
     <div className="App">
@@ -23,17 +24,17 @@ function App() {
             <button
               className={activeButton === "all" ? "isActiv" : ""}
               onClick={() => setActiveButton("all")}
-            >
-              All Products
-            </button>
+
+            >All Products</button>
             <button
               className={activeButton === "available" ? "isActiv" : ""}
               onClick={() => setActiveButton("available")}
-            >
-              Available Now
-            </button>
-            <Button></Button>
+            >Available Now</button>
           </div>
+
+          {activeButton === "all" && <Button availability={"all"}/>}
+          {activeButton === "available" && <Button availability={"available"}/>}
+
         </div>
       </div>
     </div>
