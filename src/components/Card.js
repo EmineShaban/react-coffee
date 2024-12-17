@@ -43,13 +43,12 @@ const Button = ({availability}) => {
             <p className="name">{item.name}</p>
             <p className="price">{item.price}</p>
           </div>
-
           <div className="ratings">
             <div>
               <img src={item.rating === null ? "./images/star.svg" : "./images/star_fill.svg"} alt="star" />
               <p>
                 {item.rating === null ? <span className="no-ratings">No ratings</span> : item.rating}
-                <span className="votes"> {item.rating == null ? "" : `(${item.votes} votes)`}</span>
+                <span className="votes"> {item.rating === null ? "" : `(${item.votes} votes)`}</span>
               </p>
             </div>
             <p className="sold-out">{item.available === true ? "" : "Sold out"}</p>

@@ -91,3 +91,29 @@ img {
     color: #6F757C;
 
 }
+
+
+
+@media screen and (max-width: 1024px) {
+
+.card { 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.container .title { 
+    width: 60%;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+    .card { 
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    .vector { 
+        position: absolute;
+        top: 6%;
+        left: 66%;
+    }
+}
